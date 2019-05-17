@@ -1,0 +1,279 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="practice1" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="498,3821" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="practice1" sap:VirtualizedContainerService.HintSize="458,3741" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="content" />
+      <Variable x:TypeArguments="x:String" Name="name" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="436,92" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="내용을 입력하세요" Title="내용">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[content]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="436,92" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="파일 이름을입력하세요" Title="이름">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <Sequence DisplayName="Desktop" sap:VirtualizedContainerService.HintSize="436,2801" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'notepad.exe  제목 없음 - 메모장'" FileName="C:\Windows\System32\notepad.exe" sap:VirtualizedContainerService.HintSize="414,245" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="bc9824b617fe8c7f911edac830e87950" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='제목 없음 - 메모장' /&gt;">
+        <ui:OpenApplication.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,99" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenApplication.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:OpenApplication>
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '         Notepad'" sap:VirtualizedContainerService.HintSize="414,550" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="dd01f18c3ede1b8078085aa6034d6df7" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='제목 없음 - 메모장' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,404" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'editable text  텍스트 편집'" EmptyField="True" sap:VirtualizedContainerService.HintSize="314,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="[content]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="cc66b6d604e295445933203393e25916" Selector="&lt;wnd aaname='텍스트 편집' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  서식(O)'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="11" OffsetY="10" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="9dd5ced2f1c8c7c94480b34986c55b48" Selector="&lt;ctrl automationid='MenuBar' idx='1' name='응용 프로그램' role='menu bar' /&gt;&lt;ctrl name='서식(O)' role='menu item' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window ' Menu'" sap:VirtualizedContainerService.HintSize="414,338" sap2010:WorkflowViewState.IdRef="WindowScope_2" Selector="&lt;wnd app='notepad.exe' cls='#32768' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,230" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  글꼴(F)...'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="35" OffsetY="10" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="ae130ec937ad563555b6c41d3a8198fc" Selector="&lt;ctrl name='서식(O)' role='popup menu' /&gt;&lt;ctrl automationid='33' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '   Dialog'" sap:VirtualizedContainerService.HintSize="414,630" sap2010:WorkflowViewState.IdRef="WindowScope_3" Selector="&lt;wnd app='notepad.exe' cls='#32770' title='글꼴' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,522" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'list item  기울임꼴'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="14" OffsetY="13" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e641879dcd8a80e44d85a2d179af671c" Selector="&lt;wnd ctrlid='1137' /&gt;&lt;wnd ctrlid='1000' /&gt;&lt;ctrl name='글꼴 스타일(Y):' role='list' /&gt;&lt;ctrl name='기울임꼴' role='list item' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'list item  22'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="16" OffsetY="5" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="4dc1899739eab452c588064d21bdb8f1" Selector="&lt;wnd ctrlid='1138' /&gt;&lt;wnd ctrlid='1000' /&gt;&lt;ctrl name='크기(S):' role='list' /&gt;&lt;ctrl name='22' role='list item' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="52" OffsetY="15" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="433578c7f2c83357212f0194b1c2f8fa" Selector="&lt;wnd ctrlid='1' title='확인' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '         Notepad'" sap:VirtualizedContainerService.HintSize="414,376" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="dd01f18c3ede1b8078085aa6034d6df7" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='제목 없음 - 메모장' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,230" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  파일(F)'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="27" OffsetY="9" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d9d023275b90d35a198b548e9868450f" Selector="&lt;ctrl automationid='MenuBar' idx='1' name='응용 프로그램' role='menu bar' /&gt;&lt;ctrl name='파일(F)' role='menu item' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window ' Menu'" sap:VirtualizedContainerService.HintSize="414,338" sap2010:WorkflowViewState.IdRef="WindowScope_5" Selector="&lt;wnd app='notepad.exe' cls='#32768' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,230" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="57" OffsetY="6" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="856881315f349e5274cd407a5b6a0fef" Selector="&lt;ctrl name='파일(F)' role='popup menu' /&gt;&lt;ctrl automationid='4' /&gt;" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+    </Sequence>
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window '         Dialog'" sap:VirtualizedContainerService.HintSize="436,512" sap2010:WorkflowViewState.IdRef="WindowScope_7" Selector="&lt;wnd app='notepad.exe' cls='#32770' title='다른 이름으로 저장' /&gt;">
+      <ui:WindowScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336,404" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SetValue ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="314,134" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[name]">
+              <ui:SetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="958322dd4cb005d687472ae49584f8b1" Selector="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" WaitForReady="INTERACTIVE" />
+              </ui:SetValue.Target>
+            </ui:SetValue>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition OffsetX="41" OffsetY="8" Position="TopLeft" />
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b7f56c64d27516e9332d6feb3a5afb1a" Selector="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' /&gt;" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:WindowScope.Body>
+    </ui:WindowScope>
+  </Sequence>
+</Activity>

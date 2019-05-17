@@ -995,11 +995,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "practice1",
-      "projectName": "practice1",
-      "projectPath": "D:\\project\\uipath\\level1\\practice1\\.local",
+      "projectUniqueName": "l3-practice1",
+      "projectName": "l3-practice1",
+      "projectPath": "D:\\project\\uipath\\level1\\l3-practice1\\.local",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\uipath\\level1\\practice1\\.local"
+      "outputPath": "D:\\project\\uipath\\level1\\l3-practice1\\.local"
     },
     "frameworks": {
       "net461": {
@@ -1027,5 +1027,77 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AvalonEdit 5.0.3' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "AvalonEdit"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SharpZipLib 1.0.0' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "SharpZipLib"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Rest.ClientRuntime 2.3.10' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "Microsoft.Rest.ClientRuntime"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle 1.8.1' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "BouncyCastle"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Exchange.WebServices 2.2' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "Microsoft.Exchange.WebServices"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CsvHelper 2.13.5.0' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "CsvHelper"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Humanizer.Core 2.4.2' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "Humanizer.Core"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.SignalR.Client 2.4.0' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "Microsoft.AspNet.SignalR.Client"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Extended.Wpf.Toolkit 2.8' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "Extended.Wpf.Toolkit"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NPOI 2.4.1' from source 'C:\\Users\\Administrator\\AppData\\Local\\UiPath\\app-19.4.2\\Packages': This package is signed but not by a trusted signer.",
+      "libraryId": "NPOI"
+    }
+  ]
 }

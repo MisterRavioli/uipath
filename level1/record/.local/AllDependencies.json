@@ -995,11 +995,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "practice1",
-      "projectName": "practice1",
-      "projectPath": "D:\\project\\uipath\\level1\\practice1\\.local",
+      "projectUniqueName": "record",
+      "projectName": "record",
+      "projectPath": "D:\\project\\uipath\\level1\\record\\.local",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\uipath\\level1\\practice1\\.local"
+      "outputPath": "D:\\project\\uipath\\level1\\record\\.local"
     },
     "frameworks": {
       "net461": {
