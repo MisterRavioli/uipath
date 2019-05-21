@@ -374,48 +374,6 @@
           }
         }
       },
-      "UiPath.Python.Activities/1.1.6863.33404": {
-        "type": "package",
-        "compile": {
-          "lib/net452/_._": {}
-        },
-        "runtime": {
-          "lib/net452/UiPath.Python.Activities.Design.dll": {},
-          "lib/net452/UiPath.Python.Activities.dll": {},
-          "lib/net452/UiPath.Python.Host.exe": {},
-          "lib/net452/UiPath.Python.Host32.exe": {},
-          "lib/net452/UiPath.Python.dll": {}
-        },
-        "resource": {
-          "lib/net452/de/UiPath.Python.Activities.Design.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net452/de/UiPath.Python.Activities.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net452/de/UiPath.Python.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net452/fr/UiPath.Python.Activities.Design.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.Python.Activities.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/fr/UiPath.Python.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net452/ja/UiPath.Python.Activities.Design.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.Python.Activities.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net452/ja/UiPath.Python.resources.dll": {
-            "locale": "ja"
-          }
-        }
-      },
       "UiPath.System.Activities/19.4.0": {
         "type": "package",
         "dependencies": {
@@ -1006,37 +964,6 @@
         "uipath.pdf.activities.nuspec"
       ]
     },
-    "UiPath.Python.Activities/1.1.6863.33404": {
-      "sha512": "I45p4opSWinCChYA1abDzGiWdtrCRtrLGHmax4+4WF24XwhywfMHgi7uo+/VhJRRrzVxoePjBZQWh+zKueFBmg==",
-      "type": "package",
-      "path": "uipath.python.activities/1.1.6863.33404",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net452/UiPath.Python.Activities.Design.dll",
-        "lib/net452/UiPath.Python.Activities.dll",
-        "lib/net452/UiPath.Python.Host.exe",
-        "lib/net452/UiPath.Python.Host32.exe",
-        "lib/net452/UiPath.Python.dll",
-        "lib/net452/de/UiPath.Python.Activities.Design.resources.dll",
-        "lib/net452/de/UiPath.Python.Activities.resources.dll",
-        "lib/net452/de/UiPath.Python.resources.dll",
-        "lib/net452/fr/UiPath.Python.Activities.Design.resources.dll",
-        "lib/net452/fr/UiPath.Python.Activities.resources.dll",
-        "lib/net452/fr/UiPath.Python.resources.dll",
-        "lib/net452/ja/UiPath.Python.Activities.Design.resources.dll",
-        "lib/net452/ja/UiPath.Python.Activities.resources.dll",
-        "lib/net452/ja/UiPath.Python.resources.dll",
-        "lib/net452/x64/Python.Runtime.35.dll",
-        "lib/net452/x64/Python.Runtime.36.dll",
-        "lib/net452/x86/Python.Runtime.27.dll",
-        "lib/net452/x86/Python.Runtime.33.dll",
-        "lib/net452/x86/Python.Runtime.34.dll",
-        "lib/net452/x86/Python.Runtime.35.dll",
-        "lib/net452/x86/Python.Runtime.36.dll",
-        "uipath.python.activities.1.1.6863.33404.nupkg.sha512",
-        "uipath.python.activities.nuspec"
-      ]
-    },
     "UiPath.System.Activities/19.4.0": {
       "sha512": "fXSotFDKhr+MzeVtatPExda3tVsR0P/RRIvOVQaosqiMH/FnTxUlzP9ME95/OXq4LA3Yiw+LK/m+yclMJkBfZA==",
       "type": "package",
@@ -1210,7 +1137,6 @@
       "UiPath.Excel.Activities >= 2.5.3 <= 2.5.3",
       "UiPath.Mail.Activities >= 1.4.0 <= 1.4.0",
       "UiPath.PDF.Activities >= 2.0.0 <= 2.0.0",
-      "UiPath.Python.Activities >= 1.1.6863.33404 <= 1.1.6863.33404",
       "UiPath.System.Activities >= 19.4.0 <= 19.4.0",
       "UiPath.UIAutomation.Activities >= 19.4.1 <= 19.4.1"
     ]
@@ -1220,11 +1146,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "l9-excel",
-      "projectName": "l9-excel",
-      "projectPath": "D:\\project\\uipath\\level1\\l9-excel\\.local",
+      "projectUniqueName": "l9-pdf",
+      "projectName": "l9-pdf",
+      "projectPath": "D:\\project\\uipath\\level1\\l10-pdf\\.local",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\uipath\\level1\\l9-excel\\.local"
+      "outputPath": "D:\\project\\uipath\\level1\\l10-pdf\\.local"
     },
     "frameworks": {
       "net461": {
@@ -1244,11 +1170,6 @@
             "target": "Package",
             "version": "[2.0.0, 2.0.0]"
           },
-          "UiPath.Python.Activities": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.1.6863.33404, 1.1.6863.33404]"
-          },
           "UiPath.System.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -1262,14 +1183,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.ValueTuple 4.5.0' from source 'https://www.myget.org/F/workflow/': This package is signed but not by a trusted signer.",
-      "libraryId": "System.ValueTuple"
-    }
-  ]
+  }
 }

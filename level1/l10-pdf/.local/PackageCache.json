@@ -39,6 +39,19 @@
     },
     {
       "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "2.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Administrator\\.nuget\\packages\\bitmiracle.docotic.pdf/5.2.8369\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.pdf.activities/2.0.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.pdf.activities/2.0.0\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.pdf.activities/2.0.0\\lib/net461/UiPath.PDF.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "19.4.0"
       },
@@ -101,37 +114,6 @@
         "C:\\Users\\Administrator\\.nuget\\packages\\uipath.vision/1.5.0\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
         "C:\\Users\\Administrator\\.nuget\\packages\\uipath.vision/1.5.0\\lib/net452/UiPath.Vision.Tesseract.dll",
         "C:\\Users\\Administrator\\.nuget\\packages\\uipath.vision/1.5.0\\lib/net452/UiPath.Vision.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "2.0.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Administrator\\.nuget\\packages\\bitmiracle.docotic.pdf/5.2.8369\\lib/net40/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.pdf.activities/2.0.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.pdf.activities/2.0.0\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.pdf.activities/2.0.0\\lib/net461/UiPath.PDF.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Python.Activities",
-        "Version": "1.1.6863.33404"
-      },
-      "Assemblies": [
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.Activities.Design.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.Activities.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/UiPath.Python.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x64/Python.Runtime.35.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x64/Python.Runtime.36.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.27.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.33.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.34.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.35.dll",
-        "C:\\Users\\Administrator\\.nuget\\packages\\uipath.python.activities/1.1.6863.33404\\lib/net452/x86/Python.Runtime.36.dll"
       ]
     }
   ],
@@ -308,11 +290,6 @@
           "Item2": "[5.2.8369, )"
         }
       ]
-    },
-    "UiPath.Python.Activities": {
-      "Id": "UiPath.Python.Activities",
-      "Version": "1.1.6863.33404",
-      "Dependencies": []
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
