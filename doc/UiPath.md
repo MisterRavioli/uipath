@@ -17,14 +17,16 @@
         
 # UiPath Workflow Type
 
-+ 스튜디오에서 사용하는 Workflow Type은 대표적으로 Sequence, Flowchart가 있다. 이것들을 이용하여 자동화 워크플로우를 생성한다.
-    + Sequence - 하나의 작은 비즈니스 로직을 순차적으로 실행할때 사용.
-    + Flowchart - 여러개의 비즈니스 로직을 분기에따라 실행할때 사용.
++ 스튜디오에서 사용하는 Workflow Type은 대표적으로 Sequence, Flowchart, State Machine가 있다. 이것들을 이용하여 자동화 워크플로우를 생성한다.
+    + Sequence - 선형(순차)적인 워크플로우을 만들때 사용한다.
+    + Flowchart - 조금더 복잡한 워크플로우에 사용하며 여러가지 분기 로직으로 관리할수 있다.
+    + State Machine - 큰 워크플로우에 사용되며 유한 상태변환을 통해 로직이 관리된다.
+    + Global Exception Handler - 실행오류 발생시 워크플로우의 동작을 결정하며 디버깅하는데 적합하다.
+     
 + WorkFlow를 만들려면 Activity를 이용한다.
     + Activity는 클릭, 타이핑, 브라우저/애플리케이션 열기 등의 행동을 하는 것.
-    + 약 300여개 이상의 Activity가 존재
-
-
+    + 약 400여개 이상의 Activity가 존재
+    
 # UiPath 사이트
 
 * [UiPath](https://www.uipath.com/)
