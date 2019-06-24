@@ -1,4 +1,3 @@
-# UIPATH ACADEMY STUDY
+# RPA / UiPath
 
-UIPATH TUTORIAL 
-:
+### RPA와 UiPath에 대한 설명 문서 및 UiPath Academy 실습 내역

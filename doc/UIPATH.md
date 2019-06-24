@@ -1,0 +1,42 @@
+# UIPATH란?
+
+* 루마니아에서 만들어진 회사
+* 1억 5,300만 달러 투자 유치
+* Microsoft Workflow와 WPF를 이용하여 여러가지 라이브러리들을 추가한 RPA 툴
+* RPA툴중 가장 안정적이며, 사용하기 쉬운 툴
+
+# UIPATH Enterprise RPA Platform
+
+* 3가지의 요소로 구성 됨.
+    + UiPath Studio - 드래그&드랍 형식으로 다이어그램을 그려 자동화 프로세스를 설계하는 툴
+    + UiPath Robot - Studio로 생성한 프로세스를 사람이 수행하는 것처럼 실행하는 로봇. 로봇은 두가지 유형으로 나뉜다.
+        - attended - 사람이 직접 실행해야 하는 로봇
+        - unattended - 사람이 직접 실행하지 않고 자동으로 실행되는 로봇
+    + UiPath Orchestrator - 로봇과 프로세스를 배포, 스케쥴링, 모니터링하고 관리하는 웹 애플리케이션으로 중앙 처리된 작업대기열을 통해 예외처리도 관리 가능 하다.
+        - 한번에 구동 가능한 봇이 1만개
+        
+# UiPath Workflow Type
+
++ 스튜디오에서 사용하는 Workflow Type은 대표적으로 Sequence, Flowchart가 있다. 이것들을 이용하여 자동화 워크플로우를 생성한다.
+    + Sequence - 하나의 작은 비즈니스 로직을 순차적으로 실행할때 사용.
+    + Flowchart - 여러개의 비즈니스 로직을 분기에따라 실행할때 사용.
++ WorkFlow를 만들려면 Activity를 이용한다.
+    + Activity는 클릭, 타이핑, 브라우저/애플리케이션 열기 등의 행동을 하는 것.
+    + 약 300여개 이상의 Activity가 존재
+
+
+# UiPath 사이트
+
+* [UiPath](https://www.uipath.com/)
+* [Academy](https://academy.uipath.com/)
+    + Level 1 - Foundation Training - revamped - 2018.2 (한글자막)
+    + Level 2 - Orchestrator 2018.2 Training (한글자막)
+    + Level 3 - Advanced Training (한글자막)
+* [국내포럼](https://forum.uipath.com/c/KoreaRPA)
+* [RPA Developer Advanced Certification](https://www.uipath.com/rpa/academy/certifications)
+    + 2019년 9월 30일까지 무료
+    + Level 1,2,3 이수 후 시작
+    + 이론 - 75점 합격 70개의 객관식 문제 90분 시험 (재시험 24시간 후)
+    + 실습 - 70% 합격 점수 3시간 30분 (3회 시도)
+    + 인증은 1년동안 유효함.
+    
