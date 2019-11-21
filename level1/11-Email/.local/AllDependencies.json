@@ -1142,15 +1142,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\himan\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "11-Email",
       "projectName": "11-Email",
-      "projectPath": "D:\\project\\uipath\\level1\\11-Email\\.local",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\uipath\\level1\\11-Email\\.local"
+      "projectPath": "C:\\Users\\himan\\OneDrive\\문서\\UiPath\\uipath\\level1\\11-Email\\.local",
+      "packagesPath": "C:\\Users\\himan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\himan\\OneDrive\\문서\\UiPath\\uipath\\level1\\11-Email\\.local"
     },
     "frameworks": {
       "net461": {
